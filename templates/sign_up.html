@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends "main.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <h1>Sign up</h1>
+    <form action="{{ url_for('sign_up') }}" method="post"><br>
+        <input type="text" name="name" id="" placeholder="name" ><br>
+        <input type="text" name="surname" id="" placeholder="surname"><br>
+        <input type="email" name="email" id="" placeholder="email"><br>
+        <input type="password" name="password" id="" placeholder="password"><br> <br>
+        <input type="submit" name="submit" id="">
+    </form>
+    {% endblock %}
+</body>
+</html>
